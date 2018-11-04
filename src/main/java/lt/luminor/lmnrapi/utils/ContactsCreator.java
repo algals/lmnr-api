@@ -20,9 +20,8 @@ public class ContactsCreator {
     public void createContactList(){
         Arrays.asList(
                 new ContactEntity("a6edfe4f-fdce-48fd-b2dd-a1ba08d339f1","algals", "algals@alg.lt", "+37068238512"),
-                new ContactEntity("234","oid", "email", "phone"),
+                new ContactEntity("1d677424-1bbb-4e50-ab40-86667603dd8f","petras", "petras@petras.lt", "+37067378233"),
                 new ContactEntity("456","oid", "email", "phone")
-
         ).stream().forEach(x -> contactRepository.save(x));
     }
 

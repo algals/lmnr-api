@@ -20,12 +20,6 @@ public class LmnrApiApplicationTests {
 
 	@Test
 	public void contextLoads() {
-	List<ContactEntity> z =	Arrays.asList(new ContactEntity("765","oid", "email", "phone"));
-	z.stream().forEach(x->contactRepository.saveAndFlush(x));
-	List<ContactEntity> list = contactRepository.findAll();
-
-	ContactEntity donotExist = contactRepository.getContactByOid("765");
-	ContactEntity donotExist2 = contactRepository.getContactByOid("7653");
 
 	}
 
