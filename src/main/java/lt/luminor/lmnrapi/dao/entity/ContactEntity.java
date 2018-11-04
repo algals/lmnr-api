@@ -18,14 +18,17 @@ public class ContactEntity {
     private String email;
     @Column
     private String phone;
+    @Column
+    private String address;
 
-    public ContactEntity() {}
+    public ContactEntity(){}
 
-    public ContactEntity(String oid, String name, String email, String phone) {
+    public ContactEntity(String oid, String name, String email, String phone, String address) {
         this.oid = oid;
         this.name = name;
         this.email = email;
         this.phone = phone;
+        this.address = address;
     }
 
     public Long getId() {
@@ -62,5 +65,13 @@ public class ContactEntity {
 
     public void setPhone(String phone) {
         this.phone = phone;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
     }
 }
